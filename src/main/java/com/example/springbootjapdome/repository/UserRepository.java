@@ -15,7 +15,8 @@ import org.springframework.data.repository.CrudRepository;
  * @author 73431 CRUD
  */
 public interface UserRepository extends CrudRepository<Userinfo, Long> {
+
 	@Query("select u from Userinfo u")
-	List<Userinfo>  findList();
-	
+	List<Userinfo> findList();
+
 }

@@ -16,14 +16,14 @@ import javax.persistence.Id;
  */
 @Entity
 public class Userinfo {
-	
+
 	@Id
 	@GeneratedValue
 	private long id;
-	
+
 	@Column(nullable = false)
 	private String userName;
-	
+
 	@Column(nullable = false)
 	private Integer passWord;
 
@@ -55,5 +55,5 @@ public class Userinfo {
 	public String toString() {
 		return "User{" + "id=" + id + ", userName=" + userName + ", password=" + passWord + '}';
 	}
-	
+
 }
