@@ -25,7 +25,7 @@ public class Userinfo {
 	private String userName;
 	
 	@Column(nullable = false)
-	private String passWord;
+	private Integer passWord;
 
 	public String getUserName() {
 		return userName;
@@ -35,11 +35,11 @@ public class Userinfo {
 		this.userName = userName;
 	}
 
-	public String getPassword() {
+	public Integer getPassword() {
 		return passWord;
 	}
 
-	public void setPassword(String password) {
+	public void setPassword(Integer password) {
 		this.passWord = password;
 	}
 

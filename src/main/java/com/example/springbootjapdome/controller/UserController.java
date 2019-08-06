@@ -31,4 +31,8 @@ public class UserController {
 		return "userList";
 	}
 	
+    @RequestMapping("/save")
+    public Userinfo save(Userinfo entity) {
+        return    userRepository.save(entity);
+    }
 }
