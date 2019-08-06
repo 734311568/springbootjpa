@@ -5,7 +5,7 @@
  */
 package com.example.springbootjapdome.controller;
 
-import com.example.springbootjapdome.model.User;
+import com.example.springbootjapdome.model.Userinfo;
 import com.example.springbootjapdome.repository.UserRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +26,7 @@ public class UserController {
 	@RequestMapping("/user")
 	
 	public String getUser(Model model) {
-		List<User> queryUser = userRepository.findList();
+		List<Userinfo> queryUser = userRepository.findList();
 		 model.addAttribute("queryUser",queryUser);
 		return "userList";
 	}

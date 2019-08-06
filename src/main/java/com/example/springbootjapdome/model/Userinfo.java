@@ -15,7 +15,7 @@ import javax.persistence.Id;
  * @author 73431
  */
 @Entity
-public class User {
+public class Userinfo {
 	
 	@Id
 	@GeneratedValue

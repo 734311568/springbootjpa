@@ -1,6 +1,6 @@
 package com.example.springbootjapdome;
 
-import com.example.springbootjapdome.model.User;
+import com.example.springbootjapdome.model.Userinfo;
 import com.example.springbootjapdome.repository.UserRepository;
 import java.util.List;
 import org.junit.Test;
@@ -22,13 +22,13 @@ public class SpringbootjapdomeApplicationTests {
 	}
 	@Test
 	public  void test(){
-	List<User> findList = userRepository.findList();
-		for (User user : findList) {
-			
-			System.out.println("查出来了嘛"+user.getUserName()+"\t"+user.getPassword());
-			
-		}
-		
+//	List<User> findList = userRepository.findList();
+//		for (Userinfo user : findList) {
+//			
+//			System.out.println("查出来了嘛"+user.getUserName()+"\t"+user.getPassword());
+//			
+//		}
+//		
 	
 	}
 
