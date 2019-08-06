@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author 73431
  */
 @Controller
+@EnableAutoConfiguration
 public class UserController {
 	
 	@Autowired
@@ -31,8 +32,5 @@ public class UserController {
 		return "userList";
 	}
 	
-    @RequestMapping("/save")
-    public Userinfo save(Userinfo entity) {
-        return    userRepository.save(entity);
-    }
+ 
 }
